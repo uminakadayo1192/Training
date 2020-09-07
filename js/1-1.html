@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>1-1</title>
+  <script>
+    var number = 10; // 変数 number を定義
+
+    if (0 < number && number <= 10) { // 0より上、かつ 10以下。
+      alert("正常"); // 1～10 の場合
+    } else {
+      alert("エラー"); // 1～10 以外
+    }
+
+    number = 11; // 変数 number を上書き
+
+    if (0 < number && number <= 10) { // 0より上、かつ 10以下。
+      alert("正常"); // 1～10 の場合
+    } else {
+      alert("エラー"); // 1～10 以外
+    }
+  </script>
+</head>
+<body>
+  <p>(1) 制御文を用い、変数 number に 1～10 の数値が代入されている場合は画面に「正常」と表示し、そうでない場合は「エラー」と表示しなさい。</p>
+</body>
+</html>

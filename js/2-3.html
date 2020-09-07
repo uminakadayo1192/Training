@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>2-3</title>
+  <!-- 外部 js ファイルの読み込み -->
+  <script src="./js/script.js"></script>
+
+  <style>
+    /* 見た目の都合なので無視して OK */
+    #hover {
+      background-color: cyan;
+    }
+  </style>
+</head>
+<body>
+  <!-- <p>(3) 外部 JavaScript ファイルに記述した関数を用い、フォームに入力された年齢に応じた結果を画面に表示をしなさい。
+    <br>なお、作成する外部 JavaScript ファイル名は script.js とし、js フォルダ内に配置しなさい。
+    <br>関数名は ageCheck とし、年齢に応じた表示処理を行うものとする。</p> -->
+
+  <div>
+    <p>フォームに入力された年齢に応じた結果を表示</p>
+    <label>年齢</label><input id="age" type="text" value="21"><!-- value に値を設定することで、画面初期表示時に値を入力済みにできる-->
+    <button onclick="ageCheck()">クリック</button>
+  </div>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>1-4</title>
+  <script>
+    /**
+     * 与えられた配列を元に「各要素」「合計値」を表示する
+     * @param {Array} arr 計算の元となる「配列」まるごと。ちなみに arr は array の略。
+     */
+    function arrSum(arr) {
+      var youso = ""; // 「文字 (String)」として定義。各要素をカンマ区切りにして格納
+      var sum = 0; // 「数値 (Number)」として定義。合計値
+
+      var arrMax = arr.length; // 関数 length を Array 型に対して使用した場合。配列 arr の要素数を取得
+      for (let i = 0; i < arr.length; i++) {
+        if (0 < i) youso = youso + ", "; // 初回以降は頭にカンマをつけてくっつけていく
+
+        // youso = youso + arr[i]; // ていねいに書くならこう、だが ↓↓
+        youso += arr[i]; // 数字をくっつけていく。※変数は「自身 + xxx」と足すならば += で省略可能。
+        sum += arr[i]; // 数値を足していく
+      }
+
+      // 税抜、税込をまとめて出力。
+      alert(
+        "各要素: " + youso // 文字
+        + "\n" // \n ... 改行
+        + "合計値: " + sum // 数値
+      );
+    }
+
+    var nums = [108, 130, 95, 80, 85, 102]; // 配列を定義。数値の意味を知っていたら趣味があうかもしれない
+    arrSum(nums); // 関数の呼び出し。
+  </script>
+</head>
+<body>
+  <p>(４) 関数を用い、配列の各要素の値に応じた合計値を表示しなさい。
+    <br>関数名は arrSum とし、与えられた配列の各要素の合計値の計算及び画面への表示処理を行うものとする。</p>
+</body>
+</html>
